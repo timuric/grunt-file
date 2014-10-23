@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="40px" viewBox="0 0 38 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="36" height="31" rx="3"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2" in="SourceAlpha" operator="dilate" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="2" in="SourceAlpha" operator="dilate" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-2-Copy-Copy-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Servces.png" sketch:type="MSArtboardGroup" transform="translate(-1097.000000, -2351.000000)">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(1098.000000, 2353.000000)">
+                <g id="Rectangle-149" transform="translate(0.000000, 6.000000)">
+                    <mask id="mask-2" sketch:name="Rectangle 149" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use stroke="#902AC4" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-162" fill="#902AC4" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="-5" y="-1" width="43" height="9"></rect>
+                </g>
+                <rect id="Rectangle-152" fill="#902AC4" filter="url(#filter-3)" sketch:type="MSShapeGroup" x="26" y="0" width="4" height="9" rx="8"></rect>
+                <rect id="Rectangle-154" fill="#902AC4" filter="url(#filter-4)" sketch:type="MSShapeGroup" x="7" y="0" width="4" height="9" rx="8"></rect>
+                <rect id="Rectangle-153" stroke="#902AC4" stroke-width="2" fill="#FFFFFF" sketch:type="MSShapeGroup" x="14" y="17" width="8" height="4" rx="1"></rect>
+                <rect id="Rectangle-153" stroke="#902AC4" stroke-width="2" fill="#FFFFFF" sketch:type="MSShapeGroup" x="4" y="17" width="8" height="4" rx="1"></rect>
+                <rect id="Rectangle-153" stroke="#902AC4" stroke-width="2" fill="#FFFFFF" sketch:type="MSShapeGroup" x="24" y="17" width="8" height="4" rx="1"></rect>
+                <rect id="Rectangle-154" stroke="#902AC4" stroke-width="2" fill="#FFFFFF" sketch:type="MSShapeGroup" x="14" y="23" width="8" height="4" rx="1"></rect>
+                <rect id="Rectangle-154" stroke="#902AC4" stroke-width="2" fill="#FFFFFF" sketch:type="MSShapeGroup" x="4" y="23" width="8" height="4" rx="1"></rect>
+                <rect id="Rectangle-154" stroke="#902AC4" stroke-width="2" fill="#FFFFFF" sketch:type="MSShapeGroup" x="24" y="23" width="8" height="4" rx="1"></rect>
+                <rect id="Rectangle-154" stroke="#902AC4" stroke-width="2" fill="#FFFFFF" sketch:type="MSShapeGroup" x="14" y="29" width="8" height="4" rx="1"></rect>
+                <rect id="Rectangle-154" stroke="#902AC4" stroke-width="2" fill="#FFFFFF" sketch:type="MSShapeGroup" x="4" y="29" width="8" height="4" rx="1"></rect>
+                <rect id="Rectangle-154" stroke="#902AC4" stroke-width="2" fill="#FFFFFF" sketch:type="MSShapeGroup" x="24" y="29" width="8" height="4" rx="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

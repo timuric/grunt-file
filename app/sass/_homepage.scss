@@ -1,0 +1,143 @@
+header.hero{
+  background-image: radial-gradient(farthest-corner at 50% 100%, #8647a0 28%, #2b4581 90%);
+  text-align: center;
+  overflow: hidden;
+  color: #ffffff;
+  height: 610px;
+  h1{
+    margin-bottom: 45px;
+    color: #ffffff;
+    margin-top: 70px;
+  }
+}
+
+.all-services{
+  text-align: center;
+  height: 320px;
+  position: relative;
+  top: -160px;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  border-top: solid 1px rgba(255,255,255,0.1);
+
+  section{
+    float: left;
+    width: 33.3333%;
+    height: 100%;
+
+    .icon{
+      border-right: solid 1px rgba(255,255,255,0.1);
+      height: 50%;
+      padding: 40px;
+    }
+    .caption{
+      border-right: solid 1px #EBEBEB;
+      height: 50%;
+      padding: 10px 30px;
+      h3{
+        margin: 20px 0 10px;
+      }
+    }
+  }
+  section:last-child .caption{
+    border: none;
+  }
+  section:last-child .icon{
+    border: none;
+  }
+}
+.feature{
+  .caption{
+    width: 50%;
+    h2{
+      margin: 20px 0 20px;
+    }
+  }
+}
+.mobilize{
+  height: 430px;
+  img{
+    float: right;
+    position: relative;
+    top: -50px;
+  }
+  .caption{
+    float: left;
+  }
+}
+.client-centric{
+  height: 430px;
+  padding-top: 130px;
+  img{
+    float: left;
+  }
+  .caption{
+    float: right;
+  }
+}
+.company-description{
+  margin: 160px auto 0;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #F9F9F9;
+  background-image: linear-gradient(-179deg, #F9F9F9 0%, #FFFFFF 100%);
+  overflow: hidden;
+
+  h1{
+    width: 100%;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .left{
+    width: 50%;
+    padding-left: 30px;
+    float: left;
+    img{
+      margin: 0 30px 30px;
+    }
+  }
+  .right{
+    width: 50%;
+    float: left;
+    p{
+      padding-bottom: 30px;
+    }
+    ul{
+      padding: 0;
+    }
+    li{
+      text-align: center;
+      width: 180px;
+      display: inline;
+      float: left;
+      margin-right: 60px;
+    }
+    span{
+      font-family: "source-sans-pro", sans-serif;
+      font-size: 80px;
+      color: #A25CDD;
+      line-height: 101px;
+      font-weight: 100;
+    }
+  }
+}
+.clients{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-top: solid 1px $gray-border;
+
+  img{
+    margin: 10px 40px;
+  }
+}
+.getintouch{
+  padding: 60px 0 120px;
+  background-color: #564690;
+  text-align: center;
+  h2{
+    margin: 20px 0 40px;
+    color: #fff;
+  }
+}

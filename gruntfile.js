@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 
     //Load all dev grunt packages from package.npm
+    //require('load-grunt-tasks')(grunt,{pattern:['grunt-*','time-grunt']});
     require('load-grunt-tasks')(grunt);
 
     // Time how long tasks take. Can help when optimizing build times
@@ -129,7 +130,7 @@ module.exports = function(grunt) {
         }, //compass
         watch: {
             sass: {
-                files: ['<%= config.app %>/sass/*.scss'],
+                files: ['<%= config.app %>/sass/*'],
                 tasks: ['compass:dev']
             },
             images: {
@@ -167,8 +168,8 @@ module.exports = function(grunt) {
         },
         watchDev: {
             sass: {
-                files: ['<%= config.app %>/sass/*.scss'],
-                tasks: ['compass:dev']
+                files: ['<%= config.app %>/sass/*.scss','<%= config.app %>/sass/*.sass'],
+                tasks: ['sass:dev']
             },
             bower: {
                 files: ['bower.json'],
@@ -267,9 +268,6 @@ module.exports = function(grunt) {
                 options: {
                     middleware: function(connect) {
                         return [
-                            connect.static('.tmp'),
-                            connect.static('/app/css'),
-                            connect().use('/bower_components', connect.static('./bower_components')),
                             connect.static(config.app)
                         ];
                     }
@@ -306,6 +304,32 @@ module.exports = function(grunt) {
                 '!<%= config.app %>/scripts/vendor/*',
                 'test/spec/{,*/}*.js'
             ]
+        },
+        libsass: {
+            dev:{
+                options:{
+                    loadPath: ['app/sass']
+                },
+                files:[
+                    {
+                        expand: true,
+                        cwd: 'app/sass',
+                        src: ['style.scss'],
+                        dest: 'app/styles',
+                        ext: '.css'
+                    }
+                ]
+            }
+        },
+        sass:{
+            options: {
+                sourceMap: false
+            },
+            dev:{
+                files: {
+                    'app/styles/style.css':'app/sass/style.scss'
+                }
+            }
         }
     }
 
@@ -334,7 +358,7 @@ module.exports = function(grunt) {
             'concurrent:server',
             'autoprefixer',
             'connect:livereload',
-            'watch'
+            'watchDev'
         ]);
     });
     grunt.registerTask('serveChrome', function (target) {

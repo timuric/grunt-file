@@ -1,0 +1,163 @@
+//VARIABLES
+$light-text: #808080;
+$dark-text: #414141;
+$purple-bright-text: #ABB1D7;
+$blue-link: #53ABFF;
+$gray-border: #E3E3E3;
+$purple-text :#4C4C73;
+
+//GLOBAL STYLES
+
+//primitives
+body, h1, h2, h3, h4, p, ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body{
+  font-family: "source-sans-pro", sans-serif;
+  font-size: 17px;
+}
+
+h1{
+  font-size: 55px;
+  line-height: 69px;
+  color: $dark-text;
+  font-weight: 200;
+}
+h2{
+  font-size: 47px;
+  font-weight: 100;
+  line-height: 50px;
+  color: $dark-text;
+  margin-bottom: 20px;
+}
+h3{
+  font-family: "proxima-nova-alt", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: $dark-text;
+}
+h4{
+  font-family: "proxima-nova-alt", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: $light-text;
+}
+p{
+  font-size: 17px;
+  line-height: 27px;
+  color: $light-text;
+}
+ul{
+  list-style: none;
+  color: $light-text;
+}
+a{
+  font-size: 17px;
+  color: $blue-link;
+  line-height: 20px;
+}
+
+//objects
+.inner-col{
+  width: 1024px;
+  margin: 0 auto;
+}
+.white-button{
+  background-color: #ffffff;
+  border-radius: 100px;
+  height: 30px;
+  text-decoration: none;
+  color: #6E4799;
+  padding: 11px 21px;
+  font-family: "proxima-nova-alt";
+  font-weight: 700;
+  font-size: 14px;
+}
+nav{
+  width: 100%;
+  overflow: hidden;
+  height: 70px;
+  .logo{
+    color: #ffffff;
+    position: relative;
+    top: 23px;
+    float: left;
+  }
+  ul{
+    float: right;
+    position: relative;
+    top: 22px;
+    font-size: 13px;
+    font-family: "proxima-nova-alt";
+    li{
+      display: inline;
+      margin: 10px;
+      a{
+        font-size: 13px;
+        color: $purple-bright-text;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+nav.on-white{
+  .logo{
+    color: $dark-text;
+  }
+  ul li a{
+    color: $purple-text;
+  }
+}
+
+footer{
+  overflow: hidden;
+
+  section:first-child{
+    width: 25%;
+  }
+  section{
+    float: left;
+    margin-bottom: 10px;
+    p{
+      margin-top: 0;
+      float: left;
+      width: 210px;
+    }
+  }
+  section h4{
+    margin-top: 20px;
+  }
+  section:nth-child(2){
+    width: 75%;
+    padding-left: 50px;
+    height: 180px;
+  }
+  h4:last-child{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.three-blocks{
+  display: table;
+  width: 100%;
+}
+.three-blocks section{
+  width: 33.33%;
+}
